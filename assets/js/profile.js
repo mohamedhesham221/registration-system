@@ -15,7 +15,7 @@ userEmail.textContent = data.email;
 const clearSession = () => {
   localStorage.removeItem('userData')   // Remove user data from localStorage
   setInterval(() => {
-    location.href = '/registration.html'
+    location.href = '/index.html'
   }, 200)
 }
 // Attach an event listener to the sign-out button to trigger session clearing
