@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <link rel="stylesheet" href="/assets/css/output.css">
+</head>
+<body class="body">
+  <!-- Star icon at the top for decorative purposes -->
+  <img src="./assets/img/star.svg" alt="star icon" class="star">
+  <!-- Header section with a greeting message and a hand-waving icon -->
+  <header class="flex justify-center gap-x-4 header">
+    <h1 class="heading">Hi, welcome</h1>
+    <img src="./assets/img/hand.svg" alt="hand waving icon">
+  </header>
+  <!-- Main content section -->
+  <main class="mt-5 text-center font-inter">
+    <section>
+        <!-- Placeholder for displaying the user's name dynamically -->
+      <h2 id="name" class="text-2xl font-medium"></h2>
+        <!-- Placeholder for displaying the user's email dynamically -->
+      <p id="email"></p>
+    </section>
+      <!-- Sign-out button -->
+    <button type="button" class="w-fit h-12 px-5 absolute top-[45px] left-[27px]  bg-main-color text-white rounded-xl font-inter tracking-wide cursor-auto" id="sign-out" aria-label="Sign out of your account">Sign out</button>
+  </main>
+  <script src="./assets/js/profile.js"></script>
+</body>
+</html>

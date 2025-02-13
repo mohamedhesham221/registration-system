@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*Custom classes*/
+
+.body {
+  @apply box-border min-h-screen p-8 m-0 bg-white
+}
+.star {
+  @apply absolute top-[47px] right-[10%] lg:right-1/4 w-12 h-auto
+  drop-shadow-md
+}
+.header {
+  @apply mt-32 text-center text-main-color
+}
+.heading {
+  @apply text-4xl font-bold tracking-[-0.25px] font-poppins
+}
+
+.form {
+  @apply max-w-lg mx-auto mt-8
+}
+
+.fieldset {
+  @apply flex flex-col border-0 gap-y-6
+}
+
+.input-container {
+  @apply flex flex-col gap-y-2 relative
+}
+
+.label {
+  @apply text-main-color text-base font-inter
+}
+
+.input {
+  @apply pl-2 rounded-xl border border-border-color w-full h-[56px] placeholder:text-placeholder-color text-main-color font-inter
+}
+
+.error {
+  @apply text-error-color font-inter
+}
+
+.eye-icon {
+  @apply absolute w-5 h-5 top-[52px] right-3 cursor-pointer
+}
+.submit-btn {
+  @apply w-full h-[56px] mt-8 bg-main-color text-white rounded-xl font-inter tracking-wide cursor-pointer
+}
+
+.footer {
+  @apply flex items-center justify-center mt-12 gap-x-2 font-inter
+}

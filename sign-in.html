@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/output.css">
+  <title>Sign In</title>
+</head>
+
+<body class="body">
+  <!-- Star icon at the top for decorative purposes -->
+  <img src="./assets/img/star.svg" alt="star icon" class="star">
+  <!-- Header section containing the page title -->
+  <header class="header">
+    <h1 class="heading">
+      Sign in!
+    </h1>
+  </header>
+  <!-- Main content section -->
+  <main>
+    <!-- Signin form with validation disabled (handled via JavaScript) -->
+    <form novalidate id="signin-form" class="form">
+      <fieldset class="fieldset">
+        <!-- Hidden legend for accessibility -->
+        <legend class="hidden">User information</legend>
+        <!-- Email input field -->
+        <div class="input-container">
+          <label for="signin-email" class="label">Email</label>
+          <input type="email" name="email" class="input" id="signin-email" placeholder="example@gmail.com"
+            autocomplete="email">
+          <!-- Error message placeholder -->
+          <span class="error" id="email-error"></span>
+        </div>
+        <!-- Password input field -->
+        <div class="input-container">
+          <label for="signin-pass" class="label">Password</label>
+          <input type="password" class="input" name="password" placeholder="must be 8 characters" id="signin-pass" autocomplete="current-password">
+          <!-- Error message placeholder -->
+          <span id="password-error" class="error"></span>
+          <img src="./assets/img/closed-eye.svg" alt="closed eye icon" id="eye" class="eye-icon">
+        </div>
+      </fieldset>
+          <!-- Submit button -->
+      <input type="submit" value="Sign In" id="submit" class="submit-btn">
+    </form>
+          <!-- General form message placeholder  -->
+    <p id="form-msg" class="max-w-lg mx-auto my-5 text-error-color"></p>
+  </main>
+      <!-- Footer section with a login link for returning users -->
+    <footer class="footer">
+      <span class="text-main-color opacity-70">Don’t have an account?</span><span class="opacity-100 text-main-color"><a
+          href="sign-up.html">Sign up</a></span>
+    </footer>
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/sign-in.js"></script>
+</body>
+
+</html>

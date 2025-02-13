@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/output.css">
+  <title>Registration</title>
+</head>
+
+<body class="body">
+  <!-- Star icon at the top for decorative purposes -->
+  <img src="./assets/img/star.svg" alt="star icon" class="star">
+  <!-- Header section containing the page title -->
+  <header class="header">
+    <h1 class="heading">
+      Sign up
+    </h1>
+  </header>
+  <!-- Main content section -->
+  <main>
+    <!-- Signup form with validation disabled (handled via JavaScript) -->
+    <form novalidate id="signup-form" class="form">
+      <fieldset class="fieldset">
+        <!-- Hidden legend for accessibility -->
+        <legend class="hidden">User information</legend>
+              <!-- Name input field -->
+        <div class="input-container">
+          <label for="registration-name" class="label">Name</label>
+          <input type="text" class="input" name="name" placeholder="ex: John Doe" id="registration-name"
+            autocomplete="name">
+            <!-- Error message placeholder -->
+          <span id="name-error" class="error"></span>
+        </div>
+              <!-- Email input field -->
+        <div class="input-container">
+          <label for="registration-email" class="label">Email</label>
+          <input type="email" class="input" name="email" placeholder="example@gmail.com" id="registration-email"
+            autocomplete="email">
+            <!-- Error message placeholder -->
+          <span id="email-error" class="error"></span>
+        </div>
+              <!-- Password input field -->
+        <div class="input-container">
+          <label for="registration-pass" class="label">Create Password</label>
+          <input type="password" class="input" name="password" placeholder="must be 8 characters"
+            id="registration-pass">
+            <!-- Error message placeholder -->
+          <span id="password-error" class="error"></span>
+          <img src="./assets/img/closed-eye.svg" alt="closed eye icon" id="eye" class="eye-icon">
+        </div>
+      </fieldset>
+          <!-- Submit button -->
+      <input type="submit" value="Sign up" class="submit-btn" id="submit">
+    </form>
+      <!-- General form message placeholder  -->
+    <p id="form-msg" class="max-w-lg mx-auto my-5 text-error-color" aria-live="polite"></p>
+  </main>
+  <!-- Footer section with a login link for returning users -->
+  <footer class="footer">
+    <span class="text-main-color opacity-70">Already have an account?</span><span class="opacity-100 text-main-color"><a
+        href="sign-in.html">Log in</a></span>
+  </footer>
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/registration.js"></script>
+</body>
+
+</html>
