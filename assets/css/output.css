@@ -578,6 +578,10 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.mb-6{
+  margin-bottom: 1.5rem;
+}
+
 .mt-5{
   margin-top: 1.25rem;
 }
@@ -812,6 +816,11 @@ video {
 @media (min-width: 1024px){
   .lg\:text-5xl{
     font-size: 3rem;
+    line-height: 1;
+  }
+
+  .lg\:text-6xl{
+    font-size: 3.75rem;
     line-height: 1;
   }
 }
