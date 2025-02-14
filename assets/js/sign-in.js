@@ -34,7 +34,7 @@ signIn.addEventListener('submit', (e) => {
   if (!isFormValid) return;
 
   // Validate user credentials against localStorage
-  if (data?.email !== userEmail.value) return formMsg.textContent = 'Account does’nt exist'
+  if (data?.email !== userEmail.value) return formMsg.textContent = 'Account doesn’t exist'
   if (data?.password !== userPass.value) return formMsg.textContent = 'Incorrect Password'
 
 
