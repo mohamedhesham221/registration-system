@@ -611,6 +611,10 @@ video {
   cursor: auto;
 }
 
+.cursor-pointer{
+  cursor: pointer;
+}
+
 .justify-center{
   justify-content: center;
 }
@@ -818,18 +822,13 @@ video {
     width: 3.5rem;
   }
 
-  .lg\:text-5xl{
-    font-size: 3rem;
-    line-height: 1;
+  .lg\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .lg\:text-6xl{
     font-size: 3.75rem;
     line-height: 1;
-  }
-
-  .lg\:text-4xl{
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 }
