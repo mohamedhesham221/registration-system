@@ -814,6 +814,10 @@ video {
 }
 
 @media (min-width: 1024px){
+  .lg\:w-14{
+    width: 3.5rem;
+  }
+
   .lg\:text-5xl{
     font-size: 3rem;
     line-height: 1;
